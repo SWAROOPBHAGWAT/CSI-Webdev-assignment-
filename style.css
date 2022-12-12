@@ -1,0 +1,246 @@
+.container{
+    height: 700px;
+    border: 1px;
+    background: rgb(116,108,255);
+background: linear-gradient(90deg, rgba(116,108,255,1) 0%, rgba(255,188,183,1) 100%);
+
+}
+
+.container::before{
+
+
+    content: '';
+    position: absolute;
+    height: 330px;
+    width: 330px;
+    border-radius: 50%;
+    background-color: #ff086b;
+    transform: translate(950px,90px);
+    filter: blur(8px);
+    }
+    
+    .circle {
+        background: rgb(73, 39, 93);
+        position : absolute;
+        border-radius: 50%;
+        width: 110px;
+        height: 110px;
+        transform: translate(290px,150px);
+        filter: blur(8px);
+
+    }
+
+    .circle2 {
+        background: rgb(54, 26, 70);
+        position : absolute;
+        border-radius: 50%;
+        width: 200px;
+        height:200px;
+        transform: translate(160px,430px);
+        filter: blur(8px);
+
+    }
+
+    .glass{
+        height: 400px;
+        width: 900px;
+        padding: 0,20px;
+        background:rgba(255, 255, 255, 0.23);
+        box-shadow: rgba(51, 52, 54, 0.2) 0px 8px 24px;
+        z-index: 10;
+        display: flex;
+        position: absolute;
+        border-radius: 20px;
+        border: 2px ;
+        backdrop-filter: blur(10px);
+        transform: translate(280px,160px);
+         
+      }
+      .box{
+        height: 200px;
+        width: 270px;
+        padding: 0,20px;
+        background:rgb(255, 255, 255); 
+        box-shadow: 16px -14px rgba(255, 255, 255, 0.265);
+        z-index: 10;
+        display: flex;
+        position: absolute;
+        border-radius: 6px;
+        border: 2px ;
+        backdrop-filter: blur(10px);
+        transform: translate(550px,120px);
+      }
+      .header {
+        padding: 60px;
+        transform: translate(20px,1px);
+        background: #ffffff00;
+        color: rgb(44, 32, 72);
+        font-size: 13px;
+        font-family:Arial, Helvetica, sans-serif;
+      }
+      .header2 {
+        
+        position: relative;
+        left: 28px;
+        bottom: 1px;
+        top: 5px;
+        background: #ffffff00;
+        color: rgb(54, 38, 92);
+        font-size: 11px;
+        font-family:Arial, Helvetica, sans-serif;
+        display: inline;
+      }
+      
+      .button {
+        display: inline-block;
+        padding: 0.5em 1.7em;
+        margin: 0 0.1em 0.1em 0;
+        border: 0.16em solid rgba(255, 255, 255, 0);
+        background-color: rgb(80, 10, 172);
+        border-radius: 10px;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        color: #ffffff;
+        text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+        text-align: center;
+        transition: all 0.2s;
+        width: 210px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+       
+      }
+      
+      a.button:hover {
+        border-color: rgba(0, 0, 0, 1);
+      }
+      
+      .custom-model-main {
+        text-align: center;
+        overflow: hidden;
+        position: absolute;
+        top: 270px;
+        right: 220px;
+        
+        
+        -webkit-overflow-scrolling: touch;
+        outline: 0;
+        opacity: 0;
+        -webkit-transition: opacity 0.15s linear, z-index 0.15;
+        -o-transition: opacity 0.15s linear, z-index 0.15;
+        transition: opacity 0.15s linear, z-index 0.15;
+        z-index: -1;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+
+      .model-open {
+        z-index: 99999;
+        opacity: 1;
+        overflow: hidden;
+      }
+      .custom-model-inner {
+        -webkit-transform: translate(0, -25%);
+        -ms-transform: translate(0, -25%);
+        transform: translate(0, -25%);
+        -webkit-transition: -webkit-transform 0.3s ease-out;
+        -o-transition: -o-transform 0.3s ease-out;
+        transition: -webkit-transform 0.3s ease-out;
+        -o-transition: transform 0.3s ease-out;
+        transition: transform 0.3s ease-out;
+        transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+        display: inline-block;
+        vertical-align: middle;
+        width: 320px;
+        margin: 30px auto;
+        max-width: 97%;
+      }
+      .custom-model-wrap {
+        display: block;
+        width: 100%;
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.394);
+        border: 1px solid #999;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 6px;
+        -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.313);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+        background-clip: padding-box;
+        outline: 0;
+        text-align: center;
+        padding: 5px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        max-height: calc(100vh - 70px);
+          overflow-y: auto;
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      }
+      .model-open .custom-model-inner {
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+        position: relative;
+        z-index: 999;
+      }
+
+    
+
+      .close-btn {
+        position: absolute;
+        right: 0;
+        top: -30px;
+        cursor: pointer;
+        z-index: 99;
+        font-size: 30px;
+        color: #fff;
+      }
+
+      @media screen and (min-width:800px){
+        .custom-model-main:before {
+          content: "";
+          display: inline-block;
+          height: auto;
+          vertical-align: middle;
+          margin-right: -0px;
+          height: 100%;
+        }
+    }
+    @media screen and (max-width:799px){
+      .custom-model-inner{margin-top: 45px;}
+    }
+    
+    .button2 {
+        font-family: lato,sans-serif;
+        
+        font-size: 1em;
+        letter-spacing: 0.1em;
+        text-decoration: none;
+        color: #321953;
+        display: inline-block;
+        padding: 10px 50px 10px 50px;
+        position: relative;
+        border: 3px solid #34144d;
+        border-radius: 7px;
+        top: 100px;
+      }
+      .button3 {
+        font-family: lato,sans-serif;
+        
+        font-size: 1em;
+        letter-spacing: 0.1em;
+        text-decoration: none;
+        text-align: center;
+        background-color: #34144d;
+        color: #ffffff;
+        display: inline-block;
+       
+        padding: 7px 18px 7px 18px;
+        position: absolute;
+        border: 3px solid #34144d;
+        border-radius: 7px;
+        top: 296px;
+        left: 270px;
+        width: 170px;
+        
+      } 
