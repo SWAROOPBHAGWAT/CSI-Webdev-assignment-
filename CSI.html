@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: rgb(39, 39, 39);
+        }
+  
+        h2 {
+
+            display:inline;
+            
+            float:left;
+            padding: 0;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to right, #f3db21,
+                    #ff6b08, #cf23cf, #f02d2d);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            
+
+        }
+        h3{
+            font-size:30px ;
+            line-height:1px;
+            color: #552473 ;
+        }
+        h4{
+            font-size: 26px;
+            line-height:0ex;
+            display:inline;
+            float:right;
+            padding-right: 20px;
+        
+        }
+    p{
+        font-size: 15px;
+    }
+    h5 {
+        color: #552473;
+        font-size: 17px
+    }
+    p1{
+        font-size: medium;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 220px;
+        left: 80px;
+        right:500px;
+        color: #2c103d ;
+    }
+
+        
+    </style>
+</head>
+<body>
+<div class="container"> 
+    
+    <div class = "circle">  </div> 
+    <div class = "circle2"> </div> 
+   <div class="glass"> <div class="header" style="clear: both">
+    <h1>Hey would you like to join </h1>
+    <h2>CSI WebDev</h2>
+    <h4>🕷️ 🕸️ Team?</h4> 
+    <a href="/" class="button2">View Tutorial</a>
+    <a href="/" class="button3">Randomize colors 🎨</a>
+    </div>
+    <p1>We are glad to have you here !!</p1>
+
+  
+    <div class="box"> <div class="header2">
+        <h1>Assistant WEBDEV </h1>
+        <h3>🕷️ 🕸️</h3>
+        <p>We are lookingh for <b>Potential</b> candidates</p>
+        <a class="button">Apply</a>
+
+        <div class="custom-model-main">
+            <div class="custom-model-inner">
+               <div class="close-btn">×</div>
+               <div class="custom-model-wrap">
+                  <div class="pop-up-content-wrap">
+                     <h5>Kya dekh raha hai, le bana diya!😉</h5>
+
+                     
+
+                     
+                  </div>
+               </div>
+            </div>
+            <div class="bg-overlay"></div>
+            
+         </div>
+        </div>
+    </div>
+    </div> 
+     <!-- jQuery -->
+     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+     <script>
+     $(".button").on('click', function() {
+       $(".custom-model-main").addClass('model-open');
+     }); 
+     $(".close-btn, .bg-overlay").click(function(){
+       $(".custom-model-main").removeClass('model-open');
+     });
+     </script>
+</body>
+</html>
